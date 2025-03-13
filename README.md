@@ -6,7 +6,7 @@ A Python app that manages the fan speed for Lenovo laptops.
 For use in Linux.
 
 This app was developed as an alternative to the ACPI(/BIOS?) fan speed control that runs by default in many Linux distros for Lenovo laptops.
-The default fan speed control has been known to act up - with RMP chasing up-and-down - causing a lot of noise...
+The default fan speed control has been known to act up - with RPM chasing up-and-down - causing a lot of noise...
 
 Or you may want to have more fine-grained control over the fan speed.
 
@@ -37,7 +37,7 @@ This app has been tested on a Thinkpad T16, with a single fan, running thinkpad_
 ## Warning ⚠️
 This software comes with no warranty, and you use it at your own risk.
 
-Although many modern systems have have thermal-throttling and thermal-shutdown protections - if you mess around with your fan speed - things might get too hot or even get damaged...
+Although many modern systems have thermal-throttling and thermal-shutdown protections - if you mess around with your fan speed - things might get too hot or even get damaged...
 
 
 ## Config
@@ -46,7 +46,7 @@ This will list the location, name and current value of each sensor.
 
 You can use this information to configure the blocklist.
 
-The configuration lives in ibm-fan-con.conf. Please see the comments in the file for how to configure ibm-fan-con.
+The configuration lives in `ibm-fan-con.conf`. Please see the comments in the file for how to configure ibm-fan-con-py.
 
 The **default expected location** of the config file is: `/etc/ibm-fan-con.conf` - or you can specify the location via `--conf` command line param.
 
@@ -65,7 +65,7 @@ rmmod thinkpad_acpi
 modprobe thinkpad_acpi fan_control=1
 ```
 
-Then, run ibm-fan-con as **root**:
+Then, run ibm-fan-con-py as **root**:
 ```
 python3 ./ibm-fan-con.py
 ```
